@@ -16,37 +16,57 @@ output:
 [No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
 
 ##Justification
-I am interested in how psycho-social factors impact health behaviors in diverse communities. It was difficult finding an article in Psychological Science published between 2016 and 2017 that investigates the topic I am interested in. However, I found a research report with a methodology that I would like to integrate into my own research. The author made the data and materials available via the Harvard Dataverse which should facilitate the replication process. My chosen article is titled *Healthy out-group members are represented psychologically as infected in-group members* (Petersen, 2017). Petersen (2017) investigated the categorical reasoning group members adopt when making inferences about pathogens and infectious diseases. His results demonstrated that out-group members psychologically categorize healthy out-group members similarly to infectious in-group members.
+I am interested in how psycho-social factors impact health behaviors in diverse communities. It was difficult finding an article in Psychological Science published between 2016 and 2017 that investigates the topic I am interested in. However, I found a research report with a methodology that I would like to integrate into my own research. The author made the data and materials available via the Harvard Dataverse which should facilitate the replication process. My chosen article is titled *Healthy out-group members are represented psychologically as infected in-group members* (Petersen, 2017). Petersen (2017) investigated the categorical reasoning group members adopt when making inferences about pathogens and infectious diseases. His results demonstrated that out-group members psychologically categorize healthy out-group members similarly to infectious in-group members. My target finding for replication was the unstandardized coeeficient for study 1 that should show an increase in the number of between-group recall error in the experimental condition.
 
-Petersen (2017) used the "who said what?" WSW paradigm to manipulate intergroup reasoning. I find this methodology particularly fascinating and learning the data analysis process to interpret data from such a design will be helpful to my research. To replicate this experiment, I will gather the stimuli (i.e. pictures and statements for the WSW paradigm) from the Harvard Dataverse. Consequently, I will use the author's original materials to create the survey on Qualtrics. Unlike the original study, I will use MTurk instead of CrowdFlower and YouGov to recruit participants. I will replicate study 1 on MTurk. Study 1 included a diverse sample of U.S participants (*N* = 600) while Study 2 has some demographic exclusionary criteria that would hinder a timely data collection completion on MTurk. The data analysis process will be challenging due to my lack of experience with data analysis for a such a research design and unfamiliarity with R. Nevertheless, I am excited to gain more experience with the aforementioned design and R as I will have to use them extensively in my upcoming research projects. 
+Petersen (2017) used the "who said what?" WSW paradigm to manipulate intergroup reasoning. I found this methodology particularly fascinating and learning the data analysis process to interpret data from such a design will be helpful to my research. To replicate this experiment, I gathered the stimuli (i.e. pictures and statements for the WSW paradigm) from the Harvard Dataverse. Consequently, I used the author's original materials to create the survey on Qualtrics. Unlike the original study, I used MTurk instead of CrowdFlower and YouGov to recruit participants. I replicated study 1 on MTurk. Study 1 included a diverse sample of U.S participants (*N* = 600) while Study 2 has some demographic exclusionary criteria that would hinder a timely data collection completion on MTurk. The data analysis process was challenging due to my lack of experience with data analysis for a such a research design and unfamiliarity with R. Nevertheless, I was excited to gain more experience with the aforementioned design and R as I would have to use them extensively in my upcoming research projects. 
+
 
 ##Methods
 
 ###Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+Original effect size: d = .34, power analysis for samples to achieve 80%: to 216 particiapants, 90%: 298 , 95% power:376 particpants  to detect that effect size. Due to our budget restrictions we will be running the sample size for 80% power. 
 
 ###Planned Sample
+N=216
+We will run 108 participants in each group which means we will run 216 participants. There are no demographics restrictions for participants except that they must be in the US. We are able to set that on MTurk. 
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
 
 ###Materials
+I used the specific materials the author made avaliable on Harvard Dataverse:
+*The Who Said What (WSW) paragdigm which included eight pictures (4 in-group i.e White, 4 out-group members i.e East Indian background) and eight neutral statements made by these individuals. 
+*A distractor task. 
+*A surprise recall task that asked the participants about their recollections of who made which statements. 
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Please see the following link to the survey paradigm: https://stanforduniversity.qualtrics.com/jfe/form/SV_3gdaCxLMMHhUj65
+
+ More details can be found in the direct quoted paragraphs included in the procedure section below. 
+
 
 ###Procedure	
+"The WSW paradigm is organized in three distinct phases. First, participants are presented with a slide show that introduces eight individuals, one at a time. The photo of each individual is presented along with a statement made by the individual, and participants are asked to simply pay attention. Second, participants engage in a distractor task. Third, they are presented with a surprise recall task. One by one, each statement from the presentation phase is presented with the eight photos, and participants are asked to indicate the individual who made the statement (i.e., “who said what?”). 
 
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Participants were randomly assigned one of two versions of the experiment. In the control condition, all of the pictured individuals were healthy, with no signs of infection. In the treatment condition, although the outgroup members were healthy in appearance, the ingroup members were presented with significant facial rashes, an indication of infection. These rashes were applied to the original photos using Photoshop (see the Supplemental Material available online for additional information, including validation information, on the stimuli)."
+
+The above procedure quoted directly from the original article has been followed precisely.
 
 ###Analysis Plan
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+"By analyzing the errors made in the recall phase, I was able to test whether healthy but physically different out-group members and manifestly infected in-group members were mentally represented using the same psychological category. In the WSW paradigm, if two individuals are confused during the recall phase—that is, if the statement made by one is misattributed to the
+other—this suggests that they were identified as alike in the presentation phase and confused in memory (Kurzban et al., 2001; Pietraszewski et al., 2014; Taylor et al., 1978). Previous research has identified a clear tendency for participants to categorize individuals
+along group lines in this paradigm (Kurzban et al., 2001; Pietraszewski et al., 2014; Taylor et al., 1978). 
 
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+Similarly, in the present experiment, the participants in the control condition were expected to confuse individuals along group lines. Yet to the extent that healthy out-group members fall in the same mental category as manifestly infected in-group, between-group confusion
+would increase in the treatment condition. Note that this is far from a trivial prediction. It implies that by making in-group members visually more similar to each other because of a shared rash, they will become psychologically less distinct relative to the out-group.
+
+From the answers provided in the recall phase, three measures were created for each participant: the number of correct recalls, the number of within-group recall errors (confusion of a White person with another White person or of an East Indian person with another East Indian person), and the number of between-group recall errors (confusion of an Indian person with a White person). Because each response in the recall phase was necessarily a correct attribution or one of these two types of errors, all three measures could range from 0 to 8. "
+
+**Clarify key analysis of interest here. **
+First, I anticipate to calculate between-group error in recalls for the treatment condition and control condition. Unlike what the author did in study 1, I will exclude non-white participants as only white participants were truly in the treatment condition. I will conduct the confirmatory analyses with that exclusion and without it. In the treatment condition only white pictures were shown with signs of infection. Lasty, a linear regression outcome for between group recall errors in the experimental condition will be carried out in the attempt to replicate the findings that between-group recall error increased in the experimental condition.
 
 ###Differences from Original Study
-
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+One key difference lied in the smaller sample size used for the replication. However, we were still adequately powered (See power analysis above). An additional difference in methodology relates to the recruitment site. The replication was made using MTurk to have access to a "socially diverse" sample of Americans. I also conducted demographic analyses which were not present nor included in the original article.
+*Depending on the results, I will state how any of these differences might have affected the confirmatory analyses.*
 
 ### Methods Addendum (Post Data Collection)
 
@@ -55,9 +75,9 @@ You can comment this section out prior to final report with data collection.
 #### Actual Sample
   Sample size, demographics, data exclusions based on rules spelled out in analysis plan
 
+
 #### Differences from pre-data collection methods plan
   Any differences from what was described as the original plan, or “none”.
-
 
 ##Results
 
@@ -66,27 +86,122 @@ You can comment this section out prior to final report with data collection.
 
 Data preparation following the analysis plan.
 	
-```{r include=F}
+```{r, echo=TRUE, warning=FALSE}
 ###Data Preparation
 
 ####Load Relevant Libraries and Functions
+library(readr)
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(stringr)
+library(ggplot2)
 
 ####Import data
+Fulldataset <- read_csv("PilotAdata.csv")
+View(Fulldataset)
+
+
+#then try to figure out the data structure 
+structure(Fulldataset)
+head(Fulldataset)
+tail(Fulldataset)
+colnames(Fulldataset)
 
 #### Data exclusion / filtering
+Fulldatasetclean<-Fulldataset[-c(1:7,9:10,12:75)] #removing surperfluos columns like timer info and start date
+View (Fulldatasetclean)
+
+#Still need to remove the second weird row with the reportid info I don't need
+Fulldatasetcleaner<-Fulldatasetclean[-c(2),]
+View(Fulldatasetcleaner)
+
+#Now let's see the new demographics 
+# To get a frequency or a count of participants' race. 
+ggplot(Fulldatasetcleaner, aes(x=race)) +
+  geom_bar()
+
+table(Fulldatasetcleaner$race)
+table(Fulldatasetcleaner$gender)
+table(Fulldatasetcleaner$Condition) #Note to self: Make sure to double check that total N for conditions and race and gender all add up to the same total N for the study.
+
+#To get frequency about participants' age in
+Fulldatasetcleaner = Fulldatasetcleaner %>%
+  mutate(numeric_age=as.numeric(age)) 
+#Fulldataset$numeric = as.numeric(age)
+mean(Fulldataset$numeric_age, na.rm = TRUE) #it gives me some very weird number with pilot A and I need to figure out why. N.B: Conversion to numeric because this data type is shown as string.
 
 #### Prepare data for analysis - create columns etc.
+#Tidy the data by gathering it 
+Fulldatasetcleanerlong<- Fulldatasetcleaner %>%
+  gather(Recallquestion, Recallresponse, contains("recall")) #create a column with all questions and responses that contain recall in two separate columns. 
+View(Fulldatasetcleanerlong)
+
+#between-group recall errors (confusion of an Indian person with a White person). I used the instances where participants were supposed to select an East Asian face as correct, but selected a white one.
+##Create a betweengrouperror column
+Fulldatasetcleanerlong2 = Fulldatasetcleanerlong %>%
+  mutate(betweenerror = (Recallquestion %in% c("recall2", "recall4", "recall6", "recall8", "recall10", "recall11", "recall13", "recall16")) & (grepl("White", Recallresponse))) #Check that these questions are the ones that actually have room for betweeen-group recall error.
+ 
+betweenerrordata= Fulldatasetcleanerlong2 %>%
+  group_by(Condition, ResponseId) %>%
+  summarize(betweenerrorcount = sum(betweenerror))
 ```
 
 ### Confirmatory analysis
+The analyses as specified in the analysis plan. 
+The confirmatory analysis is a linear regression where the experimental condition should predict an increase in participants' between group errors.
+```{r echo=TRUE}
+#calculate the linear regression for experimental effect on between-group error
 
-The analyses as specified in the analysis plan.  
+Model<-lm(betweenerrorcount~Condition, data=betweenerrordata)
+#The model is showing me a conditioncondition results row that I need to figure why it's there and which mistakes i made.
+summary(Model)
+```
 
 *Side-by-side graph with original graph is ideal here*
 
+```{r echo=TRUE}
+ggplot(betweenerrordata, aes(x=Condition, y=betweenerrorcount, fill=Condition)) +
+geom_bar(position="dodge", stat="identity") + 
+labs(title = "Between-group error or confusion of an East Asian picture with a white one", y = "Between error count", x= "Conditions")+
+  scale_x_discrete(labels=c("Control", "Experimental"))+
+scale_fill_brewer(palette="Set1",labels= c("Control", "Experimental"))+
+  guides(fill=F)#Hide legends
+```
+  
 ###Exploratory analyses
 
-Any follow-up analyses desired (not required).  
+As a follow-up analysis, I will be running the same analyses as above except that I will be exlcluding non-White participants. The originial author didn't do that, but instead ran only White participants for their study 2. I am curious if the results of their study 2 would be replicated if I only consider White participants as in their second study.
+
+#Filtering out non=White participants
+```{r echo=TRUE}
+Filtered_Whitedata <- Fulldatasetcleaner %>%
+  filter(race=="White")
+View(Filtered_Whitedata)
+
+#I need to tidy the data by gathering it 
+Filtered_Whitedatalong<- Filtered_Whitedata %>%
+  gather(Recallquestion, Recallresponse, contains("recall"))
+  ##create a column with all questions and responses that contain recall in two separate columns 
+View(Filtered_Whitedatalong)
+
+#between-group recall errors (confusion of an Indian person with a White person). I used the instances where participants were supposed to select an East Asian face as correct, but selected a white one.
+##Create a betweengrouperror column
+Filtered_Whitedatalong2 = Filtered_Whitedatalong %>%
+  mutate(betweenerrorwhite = (Recallquestion %in% c("recall2", "recall4", "recall6", "recall8", "recall10", "recall11", "recall13", "recall16")) & (grepl("White", Recallresponse))) #Check that these questions are the ones that actually have room for betweeen-group recall error.
+ 
+betweenerrordatawhite= Filtered_Whitedatalong2 %>%
+  group_by(Condition, ResponseId) %>%
+  summarize(betweenerrorcount = sum(betweenerrorwhite))
+```
+
+```{r echo=TRUE}
+#calculate the linear regression for experimental effect on between-group error
+
+Model2<-lm(betweenerrorcount~Condition, data=betweenerrordatawhite)
+#more details about the model results
+summary(Model2)
+```
 
 ## Discussion
 
