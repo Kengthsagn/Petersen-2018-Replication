@@ -13,9 +13,6 @@ output:
 <!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
 
 ##Introduction
-[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
-
-##Justification
 I am interested in how psycho-social factors impact health behaviors in diverse communities. It was difficult finding an article in Psychological Science published between 2016 and 2017 that investigates the topic I am interested in. However, I found a research report with a methodology that I would like to integrate into my own research. The author made the data and materials available via the Harvard Dataverse which should facilitate the replication process. My chosen article is titled *Healthy out-group members are represented psychologically as infected in-group members* (Petersen, 2017). Petersen (2017) investigated the categorical reasoning group members adopt when making inferences about pathogens and infectious diseases. His results demonstrated that out-group members psychologically categorize healthy out-group members similarly to infectious in-group members. My target finding for replication was the unstandardized coeeficient for study 1 that should show an increase in the number of between-group recall error in the experimental condition.
 
 Petersen (2017) used the "who said what?" WSW paradigm to manipulate intergroup reasoning. I found this methodology particularly fascinating and learning the data analysis process to interpret data from such a design will be helpful to my research. To replicate this experiment, I gathered the stimuli (i.e. pictures and statements for the WSW paradigm) from the Harvard Dataverse. Consequently, I used the author's original materials to create the survey on Qualtrics. Unlike the original study, I used MTurk instead of CrowdFlower and YouGov to recruit participants. I replicated study 1 on MTurk. Study 1 included a diverse sample of U.S participants (*N* = 600) while Study 2 has some demographic exclusionary criteria that would hinder a timely data collection completion on MTurk. The data analysis process was challenging due to my lack of experience with data analysis for a such a research design and unfamiliarity with R. Nevertheless, I was excited to gain more experience with the aforementioned design and R as I would have to use them extensively in my upcoming research projects. 
@@ -62,7 +59,7 @@ would increase in the treatment condition. Note that this is far from a trivial 
 From the answers provided in the recall phase, three measures were created for each participant: the number of correct recalls, the number of within-group recall errors (confusion of a White person with another White person or of an East Indian person with another East Indian person), and the number of between-group recall errors (confusion of an Indian person with a White person). Because each response in the recall phase was necessarily a correct attribution or one of these two types of errors, all three measures could range from 0 to 8. "
 
 **Clarify key analysis of interest here. **
-First, I anticipate to calculate between-group error in recalls for the treatment condition and control condition. Unlike what the author did in study 1, I will exclude non-white participants as only white participants were truly in the treatment condition. I will conduct the confirmatory analyses with that exclusion and without it. In the treatment condition only white pictures were shown with signs of infection. Lasty, a linear regression outcome for between group recall errors in the experimental condition will be carried out in the attempt to replicate the findings that between-group recall error increased in the experimental condition.
+First, I anticipate to calculate between-group error in recalls for the treatment condition and control condition. I will also calculate the linear regression model for the within-group errors as part of my exploratory analysis. 
 
 ###Differences from Original Study
 One key difference lied in the smaller sample size used for the replication. However, we were still adequately powered (See power analysis above). An additional difference in methodology relates to the recruitment site. The replication was made using MTurk to have access to a "socially diverse" sample of Americans. I also conducted demographic analyses which were not present nor included in the original article.
@@ -104,8 +101,6 @@ View(Fulldataset)
 
 #then try to figure out the data structure 
 structure(Fulldataset)
-head(Fulldataset)
-tail(Fulldataset)
 colnames(Fulldataset)
 
 
@@ -126,7 +121,7 @@ table(Fulldatasetclean$race)
 table(Fulldatasetclean$gender)
 table(Fulldatasetclean$Condition) #Note to self: Make sure to double check that total N for conditions and race and gender all add up to the same total N for the study.
 
-#To get frequency about participants' age in
+#To get frequency about participants'age
 Fulldatasetclean = Fulldatasetclean %>%
   mutate(numeric_age=as.numeric(age))#N.B: Conversion to numeric because this data type is shown as string.
 
@@ -142,9 +137,9 @@ View(Fulldatasetcleanerlong)
 
 #between-group recall errors (confusion of an Indian person with a White person and confusion of a White person whith an Indian person). I used the instances where participants were supposed to select an East Asian face as correct, but selected a white one.
 ##Create a betweengrouperror column
-questions_where_target_is_east_asian = c("recall2", "recall4", "recall6", "recall8", "recall10", "recall11", "recall13", "recall16")
-questions_where_target_is_white = c("recall1", "recall3", "recall5", "recall7", "recall9", "recall12", "recall14", "recall15")
-Erin_version = Fulldatasetcleanerlong %>%
+questions_where_target_is_east_asian = c("recall2", "recall4", "recall7", "recall8", "recall10", "recall12", "recall15", "recall16")
+questions_where_target_is_white = c("recall1", "recall3", "recall5", "recall6", "recall9", "recall11", "recall13", "recall14")
+recall_condensed_data = Fulldatasetcleanerlong %>%
   select(contains("recall"), contains("Recall"), "ResponseId", "Condition", "SC0") %>% # Selecting the columns of interest for the upcoming analyses 
   # make a new "target group" column
   mutate(target_group = ifelse(
@@ -161,11 +156,11 @@ Erin_version = Fulldatasetcleanerlong %>%
   )) %>%
   mutate(between_or_within = ifelse(response_group==target_group, "within", "between"))
 
-Erin_version_summary = Erin_version %>% # Making sure within or between group error do not count correct responses as well
+recall_condensed_data_summary = recall_condensed_data %>% # Making sure within or between group error do not count correct responses as well
   group_by(Condition, ResponseId, between_or_within, SC0) %>%
   summarise(error_count = sum(correct == FALSE))
 
-dataforanalysis=Erin_version_summary %>%
+dataforanalysis=recall_condensed_data_summary %>%
   spread(between_or_within, error_count) %>%
   mutate(between = ifelse(is.na(between), 0, between)) %>%
   mutate(within = ifelse(is.na(within), 0, within)) %>%
@@ -187,10 +182,13 @@ summary(Modelbetween)
 ```
 
 *Side-by-side graph with original graph is ideal here*
-
+``` {r}
+knitr::include_graphics("originalgraph.png")
+#This original graph doesn't show the effect of control versus experimental condition. I will attempt to create a graph from 
+```
 ```{r echo=TRUE}
-ggplot(dataforanalysis, aes(x=Condition, y=betweenerrorcount, fill=Condition)) +
-geom_bar(position="dodge", stat="identity") + 
+betweengraph<-ggplot(dataforanalysis, aes(x=Condition, y=betweenerrorcount, fill=Condition)) +
+geom_bar(position="dodge", stat="summary", fun.y= "mean") + 
 labs(title = "Between-group error or confusion of an Asian face with a white one and vice-versa", y = "Between error count", x= "Conditions")+
   scale_x_discrete(labels=c("Control", "Experimental"))+
 scale_fill_brewer(palette="Set1",labels= c("Control", "Experimental"))+
@@ -208,9 +206,9 @@ Modelwithin<-lm(withinerrorcount~Condition, data=dataforanalysis)
 #The model is showing me a conditioncondition results row that I need to figure why it's there and which mistakes i made.
 summary(Modelwithin)
 #Graphing it
-ggplot(dataforanalysis, aes(x=Condition, y=withinerrorcount, fill=Condition)) +
-geom_bar(position="dodge", stat="identity") + 
-labs(title = "Within-group error or confusion of faces within the same race", y = "Between error count", x= "Conditions")+
+Withingraph<-ggplot(dataforanalysis, aes(x=Condition, y=withinerrorcount, fill=Condition)) +
+geom_bar(position="dodge",stat="summary", fun.y= "mean") + 
+labs(title = "Within-group error or confusion of faces within the same race", y = "Within error count", x= "Conditions")+
   scale_x_discrete(labels=c("Control", "Experimental"))+
 scale_fill_brewer(palette="Set1",labels= c("Control", "Experimental"))+
   guides(fill=F) + #Hide legends
