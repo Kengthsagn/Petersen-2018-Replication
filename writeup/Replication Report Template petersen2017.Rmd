@@ -34,9 +34,11 @@ I used the specific materials the author made avaliable on Harvard Dataverse:
 *A surprise recall task that asked the participants about their recollections of who made which statements. 
 
 Please see the following link to the survey paradigm: https://stanforduniversity.qualtrics.com/jfe/form/SV_3gdaCxLMMHhUj65
+More details can be found in the direct quoted paragraphs included in the procedure section below. 
 
- More details can be found in the direct quoted paragraphs included in the procedure section below. 
+Please find the Github repository for this project here: https://github.com/psych251/petersen2017.git
 
+Here is the link to the OSF preregistration:https://osf.io/apgqj/
 
 ###Procedure	
 >"The WSW paradigm is organized in three distinct phases. First, participants are presented with a slide show that introduces eight individuals, one at a time. The photo of each individual is presented along with a statement made by the individual, and participants are asked to simply pay attention. Second, participants engage in a distractor task. Third, they are presented with a surprise recall task. One by one, each statement from the presentation phase is presented with the eight photos, and participants are asked to indicate the individual who made the statement (i.e., “who said what?”). 
