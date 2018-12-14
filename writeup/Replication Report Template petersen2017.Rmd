@@ -22,12 +22,10 @@ Petersen (2017) used the "who said what?" WSW paradigm to manipulate intergroup 
 
 ###Power Analysis
 
-Original effect size: d = .34, power analysis for samples to achieve 80%: to 216 particiapants, 90%: 298 , 95% power:376 particpants  to detect that effect size. Due to our budget restrictions we will be running the sample size for 80% power. 
+We use the original effect size: d = .34 to calculate 80%, 90% and 95% power. Here are the results: 80% power: 216 particiapants, 90% power: 298 participants, and 95% power: 376 particpants. Due to our budget restrictions we will be running the sample size for 80% power. 
 
 ###Planned Sample
-N=216
 We will run 108 participants in each group which means we will run 216 participants. There are no demographics restrictions for participants except that they must be in the US. We are able to set that on MTurk. 
-
 
 ###Materials
 I used the specific materials the author made avaliable on Harvard Dataverse:
@@ -41,40 +39,38 @@ Please see the following link to the survey paradigm: https://stanforduniversity
 
 
 ###Procedure	
-"The WSW paradigm is organized in three distinct phases. First, participants are presented with a slide show that introduces eight individuals, one at a time. The photo of each individual is presented along with a statement made by the individual, and participants are asked to simply pay attention. Second, participants engage in a distractor task. Third, they are presented with a surprise recall task. One by one, each statement from the presentation phase is presented with the eight photos, and participants are asked to indicate the individual who made the statement (i.e., “who said what?”). 
+>"The WSW paradigm is organized in three distinct phases. First, participants are presented with a slide show that introduces eight individuals, one at a time. The photo of each individual is presented along with a statement made by the individual, and participants are asked to simply pay attention. Second, participants engage in a distractor task. Third, they are presented with a surprise recall task. One by one, each statement from the presentation phase is presented with the eight photos, and participants are asked to indicate the individual who made the statement (i.e., “who said what?”). 
 
-Participants were randomly assigned one of two versions of the experiment. In the control condition, all of the pictured individuals were healthy, with no signs of infection. In the treatment condition, although the outgroup members were healthy in appearance, the ingroup members were presented with significant facial rashes, an indication of infection. These rashes were applied to the original photos using Photoshop (see the Supplemental Material available online for additional information, including validation information, on the stimuli)."
+>Participants were randomly assigned one of two versions of the experiment. In the control condition, all of the pictured individuals were healthy, with no signs of infection. In the treatment condition, although the outgroup members were healthy in appearance, the ingroup members were presented with significant facial rashes, an indication of infection. These rashes were applied to the original photos using Photoshop (see the Supplemental Material available online for additional information, including validation information, on the stimuli)."
 
-The above procedure quoted directly from the original article has been followed precisely.
+The above procedure, quoted directly from the original article, has been followed precisely.
 
 ###Analysis Plan
 
-"By analyzing the errors made in the recall phase, I was able to test whether healthy but physically different out-group members and manifestly infected in-group members were mentally represented using the same psychological category. In the WSW paradigm, if two individuals are confused during the recall phase—that is, if the statement made by one is misattributed to the
+>"By analyzing the errors made in the recall phase, I was able to test whether healthy but physically different out-group members and manifestly infected in-group members were mentally represented using the same psychological category. In the WSW paradigm, if two individuals are confused during the recall phase—that is, if the statement made by one is misattributed to the
 other—this suggests that they were identified as alike in the presentation phase and confused in memory (Kurzban et al., 2001; Pietraszewski et al., 2014; Taylor et al., 1978). Previous research has identified a clear tendency for participants to categorize individuals
 along group lines in this paradigm (Kurzban et al., 2001; Pietraszewski et al., 2014; Taylor et al., 1978). 
 
-Similarly, in the present experiment, the participants in the control condition were expected to confuse individuals along group lines. Yet to the extent that healthy out-group members fall in the same mental category as manifestly infected in-group, between-group confusion
+>Similarly, in the present experiment, the participants in the control condition were expected to confuse individuals along group lines. Yet to the extent that healthy out-group members fall in the same mental category as manifestly infected in-group, between-group confusion
 would increase in the treatment condition. Note that this is far from a trivial prediction. It implies that by making in-group members visually more similar to each other because of a shared rash, they will become psychologically less distinct relative to the out-group.
 
-From the answers provided in the recall phase, three measures were created for each participant: the number of correct recalls, the number of within-group recall errors (confusion of a White person with another White person or of an East Indian person with another East Indian person), and the number of between-group recall errors (confusion of an Indian person with a White person). Because each response in the recall phase was necessarily a correct attribution or one of these two types of errors, all three measures could range from 0 to 8. "
+>From the answers provided in the recall phase, three measures were created for each participant: the number of correct recalls, the number of within-group recall errors (confusion of a White person with another White person or of an East Indian person with another East Indian person), and the number of between-group recall errors (confusion of an Indian person with a White person). Because each response in the recall phase was necessarily a correct attribution or one of these two types of errors, all three measures could range from 0 to 8. "
 
 **Clarify key analysis of interest here. **
-First, I anticipate to calculate between-group error in recalls for the treatment condition and control condition. I will also calculate the linear regression model for the within-group errors as part of my exploratory analysis. 
+First, I calculated between-group error in recalls for the treatment condition and control condition. I also calculated the linear regression model for the within-group errors as part of my secondary analysis. 
 
 ###Differences from Original Study
-One key difference lied in the smaller sample size used for the replication. However, we were still adequately powered (See power analysis above). An additional difference in methodology relates to the recruitment site. The replication was made using MTurk to have access to a "socially diverse" sample of Americans. I also conducted demographic analyses which were not present nor included in the original article.
-*Depending on the results, I will state how any of these differences might have affected the confirmatory analyses.*
+One key difference lied in the smaller sample size used for the replication. However, we were still adequately powered at 80% (See power analysis above). An additional difference in methodology relates to the recruitment site. The replication was made using MTurk to have access to a "socially diverse" sample of Americans while the original sample used Crowdflower. I also conducted demographic analyses which were not present nor included in the original article.
 
 ### Methods Addendum (Post Data Collection)
 
-You can comment this section out prior to final report with data collection.
-
 #### Actual Sample
-  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+We ended with a sample of N=224 instead of planned sample of 216. The expiration time on MTurk was set for a short time and the HIT expired before 8 participants could go back to put their completion code. They were paid nonetheless and we still included their data because they finished the study and did so in good faith. 
 
+Our participants were randomly and evenly distributed accross the two conditions. The racial composite of the sampled broke down to 134 Whites, 58 Asians, 19 Black or African Americans, and 14 latinos (Please see racial demographic graph below). In terms of gender breakdown, 143 men and 80 women participated in the study. 
 
 #### Differences from pre-data collection methods plan
-  Any differences from what was described as the original plan, or “none”.
+"None, but please see above for the reason that led to slightly more participants than planned"
 
 ##Results
 
@@ -95,7 +91,7 @@ library(stringr)
 library(ggplot2)
 
 ####Import data
-Fulldataset <- read_csv("PilotBdata.csv")
+Fulldataset <- read_csv("Petersen 2017 Replication Project.csv")
 View(Fulldataset)
 
 
@@ -113,7 +109,7 @@ View (Fulldatasetclean)
 Fulldatasetclean<-filter(Fulldatasetclean, `Informed consent`=="Yes") 
 View (Fulldatasetclean)
 
-#Now let's see the new demographics 
+#Now let's see the new demographics.
 # To get a frequency or a count of participants' race. 
 ggplot(Fulldatasetclean, aes(x=race)) +
   geom_bar()
@@ -160,16 +156,17 @@ recall_condensed_data_summary = recall_condensed_data %>% # Making sure within o
   group_by(Condition, ResponseId, between_or_within, SC0) %>%
   summarise(error_count = sum(correct == FALSE))
 
+
 dataforanalysis=recall_condensed_data_summary %>%
   spread(between_or_within, error_count) %>%
   mutate(between = ifelse(is.na(between), 0, between)) %>%
   mutate(within = ifelse(is.na(within), 0, within)) %>%
   rename(betweenerrorcount = between) %>%
   rename(withinerrorcount = within)%>%
-  rename(correct=SC0)
+  rename(correctcount=SC0)
+View (dataforanalysis)
 
 ```
-
 ### Confirmatory analysis
 The analyses as specified in the analysis plan. 
 The confirmatory analysis is a linear regression where the experimental condition should predict an increase in participants' between group errors.
@@ -179,49 +176,81 @@ The confirmatory analysis is a linear regression where the experimental conditio
 Modelbetween<-lm(betweenerrorcount~Condition, data=dataforanalysis)
 #The model is showing me a conditioncondition results row that I need to figure why it's there and which mistakes i made.
 summary(Modelbetween)
+# To get confidence interval
+confint(Modelbetween)
+
 ```
 
 *Side-by-side graph with original graph is ideal here*
 ``` {r}
-knitr::include_graphics("originalgraph.png")
-#This original graph doesn't show the effect of control versus experimental condition. I will attempt to create a graph from 
+
+knitr::include_graphics("originalgraph_reproducibility.png")
+#The original graph is below
 ```
 ```{r echo=TRUE}
-betweengraph<-ggplot(dataforanalysis, aes(x=Condition, y=betweenerrorcount, fill=Condition)) +
-geom_bar(position="dodge", stat="summary", fun.y= "mean") + 
-labs(title = "Between-group error or confusion of an Asian face with a white one and vice-versa", y = "Between error count", x= "Conditions")+
+#preparing data with sd for error bars
+
+#Getting the ci function from ps5 
+sem <- function(x) {sd(x, na.rm=TRUE) / sqrt(sum(!is.na((x))))}
+ci <- function(x) {sem(x) * 1.96} # reasonable approximation 
+
+Plotdata<-dataforanalysis %>%
+  group_by(Condition)%>%
+  summarise(meanbetween =mean (betweenerrorcount), meanwithin= mean(withinerrorcount), sdbetween= sd (betweenerrorcount), sdwithin= sd(withinerrorcount), cibetween= ci(betweenerrorcount), ciwithin= ci(withinerrorcount))
+            
+View(Plotdata)
+
+ggplot(Plotdata, aes(x=Condition, y=meanbetween, fill=Condition)) +
+geom_bar(position="dodge", stat="identity") + 
+  geom_errorbar(stat="identity", aes(x=Condition, ymin=meanbetween-cibetween,ymax=meanbetween+cibetween, width =.2))+
+labs(title = "Between-group error: confusion of an Asian face with a white one and vice-versa", y = "Between error means", x= "Conditions")+
   scale_x_discrete(labels=c("Control", "Experimental"))+
-scale_fill_brewer(palette="Set1",labels= c("Control", "Experimental"))+
-  guides(fill=F) + #Hide legends
+scale_fill_brewer(palette="Set2",labels= c("Control", "Experimental"))+
+    guides(fill=F) + #Hide legends
   theme_bw() +
-  theme(panel.grid=element_blank())
+  theme(panel.grid=element_blank())+
+  theme(plot.title = element_text(hjust = 0.5))
+
+#ggsave("betweengraph.png", path =NULL )
 ```
   
 ###Exploratory analyses
 
-I will also be doing an exploratory analysis of the within-group error to have a more hollistic picture of the study results and implications. 
+I will also be doing a secondary analysis of within-group errors to have a more hollistic picture of the study results and implications. 
 
 ```{r}
 Modelwithin<-lm(withinerrorcount~Condition, data=dataforanalysis)
 #The model is showing me a conditioncondition results row that I need to figure why it's there and which mistakes i made.
 summary(Modelwithin)
+confint(Modelwithin)
 #Graphing it
-Withingraph<-ggplot(dataforanalysis, aes(x=Condition, y=withinerrorcount, fill=Condition)) +
-geom_bar(position="dodge",stat="summary", fun.y= "mean") + 
-labs(title = "Within-group error or confusion of faces within the same race", y = "Within error count", x= "Conditions")+
+ggplot(Plotdata, aes(x=Condition, y=meanwithin, fill=Condition)) +
+geom_bar(position="dodge", stat="identity") + 
+   geom_errorbar(stat="identity", aes(x=Condition, ymin=meanwithin-cibetween,ymax=meanwithin+cibetween, width =.2))+
+labs(title = "Within-group error: confusion of faces within the same race", y = "Within error means", x= "Conditions")+
   scale_x_discrete(labels=c("Control", "Experimental"))+
-scale_fill_brewer(palette="Set1",labels= c("Control", "Experimental"))+
-  guides(fill=F) + #Hide legends
+scale_fill_brewer(palette="Set2",labels= c("Control", "Experimental"))+
+    guides(fill=F) + #Hide legends
   theme_bw() +
-  theme(panel.grid=element_blank())
+  theme(panel.grid=element_blank())+
+  theme(plot.title = element_text(hjust = 0.5))
+
+#ggsave("withingraph.png")
 ```
 
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+Our confirmatory analysis did not replicate. We did not find an increase in between-group errors, b=.37, p=.13, 95% CI=[-0.11, 0.84]. That would suggest that participants did not confuse in-group members with out-group members when the presented in-group members were infected. 
+
+We, however, found a smilarly null finding in the secondary analysis of the within-group errors, b=.24, p=.21, 95% CI=[-0.14, 0.63]. Specifically, the mental process used to categorized infected in-group members is similar to that used to categorized out-group members. 
 
 ### Commentary
+The failure to replicate the targeted result of between-group errors implies that participants distinctively process infected in-group and healthy out-group members. There were no differences between the design and the analysis of original and the replication to explain the failed replication. I do not think that MTurk and Crowdflower workers are different enough to drive these divergent results. 
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
+This non-replicated finding would suggest that people did not confuse infected in-group members with healthy out-group members. Additionally, this would indicate that one cannot blindly use this finding to support the theory that people's aversion to atypical phenotypes or appearances explains the mental categorization of infected in-group with out-group members.
+
+In addition, participants from the original and the replication are from the US, a country known for the diversity of its population despite its tumultuous racial history. People from different background often care for and interact with each other. This would facilitate some familiarity with people that look different from each other and create some sort of in-group affiliations. Bearing this in mind, the failed replication of a significant increase in between-group errors result would not be surprising.
+
+It is still essential to point out that the authors, replicated their original findings from study 1 in their 2nd study. Nonetheless, I would love to see if they get similar results if they were to replace their stimuli of South East Asians as the out-group with Black or Latinx. Similarly, I would like to see a study with the stimuli where whites are not the in-group but rather the out-group. If their original results replicate in these different contexts, then their conclusion that mental categorization " is rather a result of the more basic perception of deviations from the expected phenotype" would be stronger. 
